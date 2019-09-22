@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<head>
+	<title>New york city</title>
+</head>
+
+<style>
+	#wrap{}
+	#pin{width: 50px; height: 70px; position: absolute; top: 280px; left: 710px; z-index: 999; }
+	#n{position: absolute; top: 300px; left: 600px; font-size: 50px; font-weight: bold; color: white; z-index: 000; transition: 3s;}
+
+	#earth{width: 600px; height: 600px; position: absolute; top: 100px; left: 400px; transition: 1.5s; z-index: 300;}
+
+	#hov:hover{opacity: 0.8;  }
+</style>
+
+<body id="wrap">
+	
+		<a id="hov"><img src="pin.png" id="pin"></a>
+		<img src="earth.png" id="earth">
+		<audio id="psound">
+			<source src="empirecut.mp3" type="audio/mp3">
+		</audio>
+		<div id="n">New York City</div>
+
+
+
+	
+
+<script type="text/javascript">
+	pin.onclick = function(){
+		pin.scr = "nyc.gif";
+		pin.style.display = "none";
+		psound.play();
+		earth.style.opacity = "0";
+		
+
+
+
+		wrap.style.background = "url('nyc.gif')";
+		wrap.style.backgroundSize = "cover";
+		
+		
+		
+	}
+
+</script>
+
+</body>
+</html>
